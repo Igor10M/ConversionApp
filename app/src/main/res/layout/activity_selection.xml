@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivitySelection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtActivityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Conversion APP"
+            android:textSize="30dp"
+            android:textColor="@color/cardview_dark_background"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/TxtGuestNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guest Number:"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/EditGuestNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/TxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guest Name: "
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/EditNameActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/RbTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperature" />
+
+            <RadioButton
+                android:id="@+id/RbLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lenght" />
+
+            <RadioButton
+                android:id="@+id/RbQuit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quit" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

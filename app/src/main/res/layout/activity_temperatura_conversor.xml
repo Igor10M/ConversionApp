@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TemperatureConverse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtTemperatureTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Temperature Conversor"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Temperature in C: "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/EditTemperatureCelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType=""
+            android:text=""
+            android:layout_marginTop="25dp"
+            />
+
+        <Button
+            android:id="@+id/BtnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Temperature in F: "
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/EditTemperatureFarenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType=""
+            android:text=""
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Temperature in K: "
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/EditTemperatureKelvin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType=""
+            android:text=""
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextgREET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Welcome : "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/EditNameTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType=""
+            android:text=""
+            android:layout_marginTop="25dp"
+            />
+        <Button
+            android:id="@+id/BtnReturnToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            />
+    </LinearLayout>
+</LinearLayout>
